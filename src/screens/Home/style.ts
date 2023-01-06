@@ -7,6 +7,12 @@ export const Container = styled.View`
     justify-content: center;
     align-items: center;
     background-color: ${theme.colors.blue};
-    font-size: 54px;
+  `}
+`;
+
+export const Title = styled.Text`
+  ${({ theme }) => css`
+    font-size: 48px;
+    font-family: ${theme.fonts.family.regular};
   `}
 `;

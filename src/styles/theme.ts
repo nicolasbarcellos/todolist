@@ -13,4 +13,10 @@ export default {
     blueDark: "#1E6F9F",
     danger: "#E25858",
   },
+  fonts: {
+    family: {
+      regular: "Inter_400Regular",
+      bold: "Inter_700Bold",
+    },
+  },
 } as const;
