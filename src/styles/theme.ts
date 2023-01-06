@@ -13,10 +13,18 @@ export default {
     blueDark: "#1E6F9F",
     danger: "#E25858",
   },
-  fonts: {
+  font: {
     family: {
       regular: "Inter_400Regular",
       bold: "Inter_700Bold",
     },
+    sizes: {
+      small: "12px",
+      medium: "14px",
+      large: "16px",
+    },
+  },
+  border: {
+    radius: "6px",
   },
 } as const;

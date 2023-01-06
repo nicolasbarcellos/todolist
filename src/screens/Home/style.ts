@@ -3,16 +3,14 @@ import styled, { css } from "styled-components/native";
 
 export const Container = styled.View`
   ${({ theme }) => css`
+    background-color: ${theme.colors.gray600};
     flex: 1;
-    justify-content: center;
-    align-items: center;
-    background-color: ${theme.colors.blue};
   `}
 `;
 
-export const Title = styled.Text`
-  ${({ theme }) => css`
-    font-size: 48px;
-    font-family: ${theme.fonts.family.regular};
-  `}
-`;
+// export const Title = styled.Text`
+//   ${({ theme }) => css`
+//     font-size: ${theme.font.sizes.large};
+//     font-family: ${theme.font.family.regular};
+//   `}
+// `;

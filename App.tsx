@@ -6,17 +6,29 @@ import {
   Inter_400Regular,
   Inter_700Bold,
 } from "@expo-google-fonts/inter";
+import AppLoading from "expo-app-loading";
+import { StatusBar } from "react-native";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
     Inter_400Regular,
     Inter_700Bold,
   });
-  return (
-    <>
-      <ThemeProvider theme={theme}>
-        <Home />
-      </ThemeProvider>
-    </>
-  );
+
+  if (!fontsLoaded) {
+    return <AppLoading />;
+  } else {
+    return (
+      <>
+        <StatusBar
+          barStyle="light-content"
+          backgroundColor="transparent"
+          translucent
+        />
+        <ThemeProvider theme={theme}>
+          <Home />
+        </ThemeProvider>
+      </>
+    );
+  }
 }
